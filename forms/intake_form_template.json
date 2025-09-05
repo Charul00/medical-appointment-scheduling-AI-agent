@@ -1,0 +1,346 @@
+{
+  "intake_form_template": {
+    "form_title": "New Patient Intake Form",
+    "sections": [
+      {
+        "section_id": "personal_information",
+        "section_title": "Personal Information",
+        "fields": [
+          {
+            "field_id": "first_name",
+            "label": "First Name",
+            "type": "text",
+            "required": true,
+            "validation": "string"
+          },
+          {
+            "field_id": "middle_name",
+            "label": "Middle Name",
+            "type": "text",
+            "required": false,
+            "validation": "string"
+          },
+          {
+            "field_id": "last_name",
+            "label": "Last Name",
+            "type": "text",
+            "required": true,
+            "validation": "string"
+          },
+          {
+            "field_id": "date_of_birth",
+            "label": "Date of Birth",
+            "type": "date",
+            "required": true,
+            "validation": "date"
+          },
+          {
+            "field_id": "gender",
+            "label": "Gender",
+            "type": "select",
+            "required": true,
+            "options": ["male", "female", "other", "prefer-not-to-say"]
+          },
+          {
+            "field_id": "marital_status",
+            "label": "Marital Status",
+            "type": "select",
+            "required": false,
+            "options": ["single", "married", "divorced", "widowed", "separated"]
+          },
+          {
+            "field_id": "social_security",
+            "label": "Social Security Number",
+            "type": "text",
+            "required": true,
+            "validation": "ssn",
+            "format": "XXX-XX-XXXX"
+          }
+        ]
+      },
+      {
+        "section_id": "contact_information",
+        "section_title": "Contact Information",
+        "fields": [
+          {
+            "field_id": "address",
+            "label": "Address",
+            "type": "text",
+            "required": true,
+            "validation": "string"
+          },
+          {
+            "field_id": "city",
+            "label": "City",
+            "type": "text",
+            "required": true,
+            "validation": "string"
+          },
+          {
+            "field_id": "state",
+            "label": "State",
+            "type": "text",
+            "required": true,
+            "validation": "string"
+          },
+          {
+            "field_id": "zip_code",
+            "label": "ZIP Code",
+            "type": "text",
+            "required": true,
+            "validation": "zipcode"
+          },
+          {
+            "field_id": "primary_phone",
+            "label": "Primary Phone",
+            "type": "tel",
+            "required": true,
+            "validation": "phone",
+            "format": "(XXX) XXX-XXXX"
+          },
+          {
+            "field_id": "secondary_phone",
+            "label": "Secondary Phone",
+            "type": "tel",
+            "required": false,
+            "validation": "phone",
+            "format": "(XXX) XXX-XXXX"
+          },
+          {
+            "field_id": "email",
+            "label": "Email Address",
+            "type": "email",
+            "required": true,
+            "validation": "email"
+          },
+          {
+            "field_id": "preferred_contact",
+            "label": "Preferred Contact Method",
+            "type": "select",
+            "required": true,
+            "options": ["phone", "email", "text"]
+          }
+        ]
+      },
+      {
+        "section_id": "emergency_contact",
+        "section_title": "Emergency Contact",
+        "fields": [
+          {
+            "field_id": "emergency_name",
+            "label": "Full Name",
+            "type": "text",
+            "required": true,
+            "validation": "string"
+          },
+          {
+            "field_id": "emergency_relationship",
+            "label": "Relationship",
+            "type": "text",
+            "required": true,
+            "validation": "string"
+          },
+          {
+            "field_id": "emergency_phone",
+            "label": "Phone Number",
+            "type": "tel",
+            "required": true,
+            "validation": "phone",
+            "format": "(XXX) XXX-XXXX"
+          },
+          {
+            "field_id": "emergency_email",
+            "label": "Email Address",
+            "type": "email",
+            "required": false,
+            "validation": "email"
+          }
+        ]
+      },
+      {
+        "section_id": "insurance_information",
+        "section_title": "Insurance Information",
+        "fields": [
+          {
+            "field_id": "insurance_carrier",
+            "label": "Insurance Carrier",
+            "type": "text",
+            "required": true,
+            "validation": "string"
+          },
+          {
+            "field_id": "policy_number",
+            "label": "Policy Number",
+            "type": "text",
+            "required": true,
+            "validation": "string"
+          },
+          {
+            "field_id": "group_number",
+            "label": "Group Number",
+            "type": "text",
+            "required": false,
+            "validation": "string"
+          },
+          {
+            "field_id": "policy_holder",
+            "label": "Policy Holder Name",
+            "type": "text",
+            "required": false,
+            "validation": "string"
+          },
+          {
+            "field_id": "relationship_to_patient",
+            "label": "Relationship to Patient",
+            "type": "select",
+            "required": false,
+            "options": ["self", "spouse", "parent", "child", "other"]
+          }
+        ]
+      },
+      {
+        "section_id": "medical_history",
+        "section_title": "Medical History",
+        "fields": [
+          {
+            "field_id": "primary_care_physician",
+            "label": "Primary Care Physician",
+            "type": "text",
+            "required": false,
+            "validation": "string"
+          },
+          {
+            "field_id": "reason_for_visit",
+            "label": "Reason for Today's Visit",
+            "type": "textarea",
+            "required": true,
+            "validation": "string"
+          },
+          {
+            "field_id": "current_medications",
+            "label": "Current Medications (include dosage)",
+            "type": "textarea",
+            "required": false,
+            "validation": "string",
+            "placeholder": "List all medications, supplements, and dosages"
+          },
+          {
+            "field_id": "allergies",
+            "label": "Known Allergies",
+            "type": "textarea",
+            "required": true,
+            "validation": "string",
+            "placeholder": "List all known allergies or write 'None'"
+          },
+          {
+            "field_id": "medical_history",
+            "label": "Past Medical History",
+            "type": "textarea",
+            "required": false,
+            "validation": "string",
+            "placeholder": "Previous surgeries, hospitalizations, chronic conditions"
+          },
+          {
+            "field_id": "family_history",
+            "label": "Family Medical History",
+            "type": "textarea",
+            "required": false,
+            "validation": "string",
+            "placeholder": "Significant family medical history"
+          }
+        ]
+      },
+      {
+        "section_id": "lifestyle_information",
+        "section_title": "Lifestyle Information",
+        "fields": [
+          {
+            "field_id": "smoking_status",
+            "label": "Smoking Status",
+            "type": "select",
+            "required": true,
+            "options": ["never", "former", "current"]
+          },
+          {
+            "field_id": "alcohol_use",
+            "label": "Alcohol Use",
+            "type": "select",
+            "required": false,
+            "options": ["none", "occasional", "moderate", "heavy"]
+          },
+          {
+            "field_id": "exercise_habits",
+            "label": "Exercise Habits",
+            "type": "textarea",
+            "required": false,
+            "validation": "string",
+            "placeholder": "Describe your exercise routine"
+          }
+        ]
+      },
+      {
+        "section_id": "consent_authorization",
+        "section_title": "Consent and Authorization",
+        "fields": [
+          {
+            "field_id": "treatment_consent",
+            "label": "I consent to treatment by the medical staff",
+            "type": "checkbox",
+            "required": true,
+            "validation": "boolean"
+          },
+          {
+            "field_id": "hipaa_consent",
+            "label": "I acknowledge receipt of HIPAA privacy practices",
+            "type": "checkbox",
+            "required": true,
+            "validation": "boolean"
+          },
+          {
+            "field_id": "insurance_assignment",
+            "label": "I assign insurance benefits to be paid directly to the provider",
+            "type": "checkbox",
+            "required": true,
+            "validation": "boolean"
+          },
+          {
+            "field_id": "appointment_reminders",
+            "label": "I consent to receive appointment reminders via my preferred contact method",
+            "type": "checkbox",
+            "required": false,
+            "validation": "boolean"
+          },
+          {
+            "field_id": "patient_signature",
+            "label": "Electronic Signature",
+            "type": "text",
+            "required": true,
+            "validation": "string",
+            "placeholder": "Type your full name as electronic signature"
+          },
+          {
+            "field_id": "signature_date",
+            "label": "Date",
+            "type": "date",
+            "required": true,
+            "validation": "date"
+          }
+        ]
+      }
+    ]
+  },
+  "form_settings": {
+    "auto_fill_date": true,
+    "validation_on_submit": true,
+    "save_partial_progress": false,
+    "confirmation_message": "Intake form submitted successfully! We will review your information before your appointment.",
+    "error_message": "Please fill in all required fields and correct any errors.",
+    "redirect_url": null
+  },
+  "integration_settings": {
+    "submit_endpoint": "/api/submit-intake-form",
+    "validation_endpoint": "/api/validate-intake-form",
+    "save_draft_endpoint": "/api/save-intake-draft",
+    "file_upload_endpoint": "/api/upload-form-attachments"
+  }
+}

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Patient Intake Form</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .section-title {
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            margin: -20px -20px 20px -20px;
+            border-radius: 8px 8px 0 0;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .form-row .form-group {
+            flex: 1;
+            margin-bottom: 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #495057;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #e9ecef;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .checkbox-group input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        .submit-btn {
+            background: #28a745;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .submit-btn:hover {
+            background: #218838;
+        }
+        .required {
+            color: #dc3545;
+        }
+        .note {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        @media (max-width: 768px) {
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+            body {
+                padding: 10px;
+            }
+            .form-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="header">
+            <h1>New Patient Intake Form</h1>
+            <p>Please complete this form before your appointment</p>
+        </div>
+
+        <div class="note">
+            <strong>Note:</strong> All fields marked with <span class="required">*</span> are required. Please ensure all information is accurate and complete.
+        </div>
+
+        <form id="patientIntakeForm">
+            <!-- Personal Information -->
+            <div class="section">
+                <div class="section-title">Personal Information</div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name <span class="required">*</span></label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="middleName">Middle Name</label>
+                        <input type="text" id="middleName" name="middleName">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name <span class="required">*</span></label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dateOfBirth">Date of Birth <span class="required">*</span></label>
+                        <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender <span class="required">*</span></label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                            <option value="prefer-not-to-say">Prefer not to say</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="maritalStatus">Marital Status</label>
+                        <select id="maritalStatus" name="maritalStatus">
+                            <option value="">Select Status</option>
+                            <option value="single">Single</option>
+                            <option value="married">Married</option>
+                            <option value="divorced">Divorced</option>
+                            <option value="widowed">Widowed</option>
+                            <option value="separated">Separated</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="socialSecurity">Social Security Number <span class="required">*</span></label>
+                    <input type="text" id="socialSecurity" name="socialSecurity" placeholder="XXX-XX-XXXX" required>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="section">
+                <div class="section-title">Contact Information</div>
+                
+                <div class="form-group">
+                    <label for="address">Address <span class="required">*</span></label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">City <span class="required">*</span></label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State <span class="required">*</span></label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="zipCode">ZIP Code <span class="required">*</span></label>
+                        <input type="text" id="zipCode" name="zipCode" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="primaryPhone">Primary Phone <span class="required">*</span></label>
+                        <input type="tel" id="primaryPhone" name="primaryPhone" placeholder="(XXX) XXX-XXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="secondaryPhone">Secondary Phone</label>
+                        <input type="tel" id="secondaryPhone" name="secondaryPhone" placeholder="(XXX) XXX-XXXX">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="preferredContact">Preferred Contact Method <span class="required">*</span></label>
+                    <select id="preferredContact" name="preferredContact" required>
+                        <option value="">Select Method</option>
+                        <option value="phone">Phone</option>
+                        <option value="email">Email</option>
+                        <option value="text">Text Message</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Emergency Contact -->
+            <div class="section">
+                <div class="section-title">Emergency Contact</div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="emergencyName">Full Name <span class="required">*</span></label>
+                        <input type="text" id="emergencyName" name="emergencyName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emergencyRelationship">Relationship <span class="required">*</span></label>
+                        <input type="text" id="emergencyRelationship" name="emergencyRelationship" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="emergencyPhone">Phone Number <span class="required">*</span></label>
+                        <input type="tel" id="emergencyPhone" name="emergencyPhone" placeholder="(XXX) XXX-XXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emergencyEmail">Email Address</label>
+                        <input type="email" id="emergencyEmail" name="emergencyEmail">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Insurance Information -->
+            <div class="section">
+                <div class="section-title">Insurance Information</div>
+                
+                <div class="form-group">
+                    <label for="insuranceCarrier">Insurance Carrier <span class="required">*</span></label>
+                    <input type="text" id="insuranceCarrier" name="insuranceCarrier" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="policyNumber">Policy Number <span class="required">*</span></label>
+                        <input type="text" id="policyNumber" name="policyNumber" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="groupNumber">Group Number</label>
+                        <input type="text" id="groupNumber" name="groupNumber">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="policyHolder">Policy Holder Name</label>
+                        <input type="text" id="policyHolder" name="policyHolder">
+                    </div>
+                    <div class="form-group">
+                        <label for="relationshipToPatient">Relationship to Patient</label>
+                        <select id="relationshipToPatient" name="relationshipToPatient">
+                            <option value="">Select Relationship</option>
+                            <option value="self">Self</option>
+                            <option value="spouse">Spouse</option>
+                            <option value="parent">Parent</option>
+                            <option value="child">Child</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Medical History -->
+            <div class="section">
+                <div class="section-title">Medical History</div>
+                
+                <div class="form-group">
+                    <label for="primaryCarePhysician">Primary Care Physician</label>
+                    <input type="text" id="primaryCarePhysician" name="primaryCarePhysician">
+                </div>
+
+                <div class="form-group">
+                    <label for="reasonForVisit">Reason for Today's Visit <span class="required">*</span></label>
+                    <textarea id="reasonForVisit" name="reasonForVisit" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="currentMedications">Current Medications (include dosage)</label>
+                    <textarea id="currentMedications" name="currentMedications" placeholder="List all medications, supplements, and dosages"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="allergies">Known Allergies <span class="required">*</span></label>
+                    <textarea id="allergies" name="allergies" placeholder="List all known allergies or write 'None'" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="medicalHistory">Past Medical History</label>
+                    <textarea id="medicalHistory" name="medicalHistory" placeholder="Previous surgeries, hospitalizations, chronic conditions"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="familyHistory">Family Medical History</label>
+                    <textarea id="familyHistory" name="familyHistory" placeholder="Significant family medical history"></textarea>
+                </div>
+            </div>
+
+            <!-- Lifestyle Information -->
+            <div class="section">
+                <div class="section-title">Lifestyle Information</div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="smokingStatus">Smoking Status <span class="required">*</span></label>
+                        <select id="smokingStatus" name="smokingStatus" required>
+                            <option value="">Select Status</option>
+                            <option value="never">Never smoked</option>
+                            <option value="former">Former smoker</option>
+                            <option value="current">Current smoker</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="alcoholUse">Alcohol Use</label>
+                        <select id="alcoholUse" name="alcoholUse">
+                            <option value="">Select Usage</option>
+                            <option value="none">None</option>
+                            <option value="occasional">Occasional</option>
+                            <option value="moderate">Moderate</option>
+                            <option value="heavy">Heavy</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="exerciseHabits">Exercise Habits</label>
+                    <textarea id="exerciseHabits" name="exerciseHabits" placeholder="Describe your exercise routine"></textarea>
+                </div>
+            </div>
+
+            <!-- Consent and Authorization -->
+            <div class="section">
+                <div class="section-title">Consent and Authorization</div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="treatmentConsent" name="treatmentConsent" required>
+                    <label for="treatmentConsent">I consent to treatment by the medical staff <span class="required">*</span></label>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="hipaaConsent" name="hipaaConsent" required>
+                    <label for="hipaaConsent">I acknowledge receipt of HIPAA privacy practices <span class="required">*</span></label>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="insuranceAssignment" name="insuranceAssignment" required>
+                    <label for="insuranceAssignment">I assign insurance benefits to be paid directly to the provider <span class="required">*</span></label>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="appointmentReminders" name="appointmentReminders">
+                    <label for="appointmentReminders">I consent to receive appointment reminders via my preferred contact method</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="patientSignature">Electronic Signature <span class="required">*</span></label>
+                    <input type="text" id="patientSignature" name="patientSignature" placeholder="Type your full name as electronic signature" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="signatureDate">Date <span class="required">*</span></label>
+                    <input type="date" id="signatureDate" name="signatureDate" required>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Intake Form</button>
+        </form>
+    </div>
+
+    <script>
+        // Auto-fill today's date for signature
+        document.getElementById('signatureDate').valueAsDate = new Date();
+
+        // Form validation and submission
+        document.getElementById('patientIntakeForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Collect form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Basic validation
+            const requiredFields = ['firstName', 'lastName', 'dateOfBirth', 'gender', 'socialSecurity', 
+                                  'address', 'city', 'state', 'zipCode', 'primaryPhone', 'email', 
+                                  'preferredContact', 'emergencyName', 'emergencyRelationship', 
+                                  'emergencyPhone', 'insuranceCarrier', 'policyNumber', 'reasonForVisit', 
+                                  'allergies', 'smokingStatus', 'treatmentConsent', 'hipaaConsent', 
+                                  'insuranceAssignment', 'patientSignature', 'signatureDate'];
+            
+            let isValid = true;
+            requiredFields.forEach(field => {
+                const element = document.getElementById(field) || document.querySelector(`input[name="${field}"]`);
+                if (!data[field] || data[field].trim() === '') {
+                    isValid = false;
+                    if (element) {
+                        element.style.borderColor = '#dc3545';
+                    }
+                } else if (element) {
+                    element.style.borderColor = '#e9ecef';
+                }
+            });
+            
+            if (!isValid) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Simulate form submission
+            alert('Intake form submitted successfully! We will review your information before your appointment.');
+            
+            // In a real application, you would send this data to your server
+            console.log('Form data:', data);
+        });
+
+        // Phone number formatting
+        function formatPhoneNumber(input) {
+            let value = input.value.replace(/\D/g, '');
+            if (value.length >= 6) {
+                value = `(${value.slice(0,3)}) ${value.slice(3,6)}-${value.slice(6,10)}`;
+            } else if (value.length >= 3) {
+                value = `(${value.slice(0,3)}) ${value.slice(3)}`;
+            }
+            input.value = value;
+        }
+
+        // SSN formatting
+        function formatSSN(input) {
+            let value = input.value.replace(/\D/g, '');
+            if (value.length >= 5) {
+                value = `${value.slice(0,3)}-${value.slice(3,5)}-${value.slice(5,9)}`;
+            } else if (value.length >= 3) {
+                value = `${value.slice(0,3)}-${value.slice(3)}`;
+            }
+            input.value = value;
+        }
+
+        // Add event listeners for formatting
+        document.getElementById('primaryPhone').addEventListener('input', function() {
+            formatPhoneNumber(this);
+        });
+        
+        document.getElementById('secondaryPhone').addEventListener('input', function() {
+            formatPhoneNumber(this);
+        });
+        
+        document.getElementById('emergencyPhone').addEventListener('input', function() {
+            formatPhoneNumber(this);
+        });
+        
+        document.getElementById('socialSecurity').addEventListener('input', function() {
+            formatSSN(this);
+        });
+    </script>
+</body>
+</html>

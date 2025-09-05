@@ -1,0 +1,7 @@
+doctor_id,first_name,last_name,specialty,location,email,phone,license_number,years_experience
+DOC001,Emily,Smith,Family Medicine,Main Clinic,dr.smith@valleymedical.com,+1-555-1001,FM12345,15
+DOC002,Michael,Williams,Internal Medicine,Main Clinic,dr.williams@valleymedical.com,+1-555-1002,IM23456,12
+DOC003,Sarah,Brown,Pediatrics,Pediatric Center,dr.brown@valleymedical.com,+1-555-1003,PD34567,8
+DOC004,Robert,Johnson,Cardiology,Specialty Clinic,dr.johnson@valleymedical.com,+1-555-1004,CD45678,20
+DOC005,Jennifer,Davis,Geriatrics,Senior Care Center,dr.davis@valleymedical.com,+1-555-1005,GR56789,18
+DOC006,David,Lee,Psychiatry,Mental Health Center,dr.lee@valleymedical.com,+1-555-1006,PS67890,10
