@@ -259,4 +259,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ for healthcare providers who want to modernize their appointment scheduling process.**
+**Built with ❤️ Charul Chim Generative AI Enthusiast **
