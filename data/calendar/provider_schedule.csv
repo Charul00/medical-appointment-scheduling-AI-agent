@@ -1,0 +1,43 @@
+schedule_id,provider,date,time,status,duration_minutes,appointment_type
+SCH001,Dr. Emily Smith,2025-09-07,09:00,booked,60,routine
+SCH002,Dr. Emily Smith,2025-09-07,10:00,available,30,routine
+SCH003,Dr. Emily Smith,2025-09-07,10:30,available,30,routine
+SCH004,Dr. Emily Smith,2025-09-07,11:00,available,45,physical
+SCH005,Dr. Emily Smith,2025-09-07,11:45,available,30,routine
+SCH006,Dr. Emily Smith,2025-09-07,14:00,available,30,routine
+SCH007,Dr. Emily Smith,2025-09-07,14:30,available,45,physical
+SCH008,Dr. Emily Smith,2025-09-07,15:15,available,30,routine
+SCH009,Dr. Emily Smith,2025-09-08,08:00,booked,30,routine
+SCH010,Dr. Emily Smith,2025-09-08,08:30,available,30,routine
+SCH011,Dr. Robert Johnson,2025-09-07,09:00,booked,80,cardiology
+SCH012,Dr. Robert Johnson,2025-09-07,10:00,booked,60,routine
+SCH013,Dr. Robert Johnson,2025-09-07,11:00,available,60,routine
+SCH014,Dr. Robert Johnson,2025-09-07,12:00,available,45,physical
+SCH015,Dr. Robert Johnson,2025-09-07,13:00,available,80,cardiology
+SCH016,Dr. Robert Johnson,2025-09-07,14:00,booked,90,mental health
+SCH017,Dr. Robert Johnson,2025-09-07,15:30,available,60,routine
+SCH018,Dr. Robert Johnson,2025-09-07,16:30,available,45,physical
+SCH019,Dr. Michael Williams,2025-09-07,08:00,available,45,physical
+SCH020,Dr. Michael Williams,2025-09-07,09:00,available,60,routine
+SCH021,Dr. Michael Williams,2025-09-07,10:00,available,60,routine
+SCH022,Dr. Michael Williams,2025-09-07,11:00,available,30,follow-up
+SCH023,Dr. Michael Williams,2025-09-07,14:00,available,60,routine
+SCH024,Dr. Michael Williams,2025-09-07,15:00,available,45,physical
+SCH025,Dr. Sarah Brown,2025-09-07,09:00,available,45,pediatric
+SCH026,Dr. Sarah Brown,2025-09-07,10:00,available,30,pediatric
+SCH027,Dr. Sarah Brown,2025-09-07,10:30,available,45,pediatric
+SCH028,Dr. Sarah Brown,2025-09-07,11:15,available,30,pediatric
+SCH029,Dr. Sarah Brown,2025-09-07,14:00,available,45,pediatric
+SCH030,Dr. Sarah Brown,2025-09-07,15:00,available,30,pediatric
+SCH031,Dr. Jennifer Davis,2025-09-07,08:30,available,60,geriatric
+SCH032,Dr. Jennifer Davis,2025-09-07,09:30,available,45,geriatric
+SCH033,Dr. Jennifer Davis,2025-09-07,10:15,available,60,geriatric
+SCH034,Dr. Jennifer Davis,2025-09-07,11:15,available,30,follow-up
+SCH035,Dr. Jennifer Davis,2025-09-07,14:00,available,60,geriatric
+SCH036,Dr. Jennifer Davis,2025-09-07,15:00,available,45,geriatric
+SCH037,Dr. David Lee,2025-09-07,09:00,available,90,mental health
+SCH038,Dr. David Lee,2025-09-07,10:30,available,60,mental health
+SCH039,Dr. David Lee,2025-09-07,11:30,available,90,mental health
+SCH040,Dr. David Lee,2025-09-07,13:00,available,60,mental health
+SCH041,Dr. David Lee,2025-09-07,14:00,available,90,mental health
+SCH042,Dr. David Lee,2025-09-07,15:30,available,60,mental health

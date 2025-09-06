@@ -1,0 +1,29 @@
+booking_id,patient_name,patient_id,provider,date,time,status,appointment_type,duration_minutes,created_at
+APT_20250906_013530,Unknown Patient,NEW_PATIENT,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,General consultation,60,2025-09-06T01:35:30
+APT_20250906_014145,Unknown Patient,NEW_PATIENT,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,General consultation,60,2025-09-06T01:41:45
+APT_20250906_015034,Charul Chim,NEW_PATIENT,Dr. Emily Smith,2025-09-07,09:00 AM,confirmed,routine,60,2025-09-06T01:50:34
+APT_20250906_015409,John Doe,P20250906015409,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,physical,45,2025-09-06T01:54:09
+APT_20250906_015448,Jane Smith,NEW_PATIENT,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,physical,75,2025-09-06T01:54:48
+APT_20250906_015546,Alex Rodriguez,NEW_PATIENT,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,mental health,90,2025-09-06T01:55:46
+APT_20250906_015753,Alex Rodriguez,NEW_PATIENT,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,mental health,90,2025-09-06T01:57:53
+APT_20250906_015831,Mike Wilson,P20250906015831,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,cardiology,80,2025-09-06T01:58:31
+APT_20250906_015851,Sarah Johnson,P001,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,follow-up,20,2025-09-06T01:58:51
+APT_20250906_020400,Emma Thompson,P20250906020400,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,cardiology,80,2025-09-06T02:04:00
+APT_20250906_020759,David Wilson,P20250906020759,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,mental health,90,2025-09-06T02:07:59
+APT_20250906_020843,Rachel Green,P20250906020843,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,urgent,75,2025-09-06T02:08:43
+APT_20250906_021947,Unknown Patient,P20250906021947,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,routine,60,2025-09-06T02:19:47
+APT_20250906_022655,Alex Thompson,P20250906022655,Dr. Robert Johnson,2025-09-07,14:00 PM,confirmed,mental health,90,2025-09-06T02:26:55
+APT_20250906_022900,Maria Garcia,P20250906022900,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,physical,75,2025-09-06T02:29:00
+APT_20250906_023453,Unknown Patient,P20250906021947,Dr. Emily Smith,2025-09-08,08:00 AM,confirmed,routine,30,2025-09-06T02:34:53
+APT_20250906_024559,Unknown Patient,P20250906021947,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,physical,45,2025-09-06T02:45:59
+APT_20250906_024817,Final Test,P20250906024817,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,follow-up,50,2025-09-06T02:48:17
+APT_20250906_030109,Charul Chim,P20250906030001,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,physical,45,2025-09-06T03:01:09
+APT_20250906_030845,Book Appointment,P20250906030845,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,physical,75,2025-09-06T03:08:45
+APT_20250906_031618,Book Appointment,P20250906030845,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,physical,45,2025-09-06T03:16:18
+APT_20250906_031720,Charul Chim,P20250906030001,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,physical,45,2025-09-06T03:17:20
+APT_20250906_033053,Test Newpatient,P20250906033053,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,routine,60,2025-09-06T03:30:53
+APT_20250906_033058,Charul Chim,P20250906030001,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,follow-up,20,2025-09-06T03:30:58
+APT_20250906_033116,Test Newpatient,P20250906033053,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,routine,30,2025-09-06T03:31:16
+APT_20250906_033122,Charul Chim,P20250906030001,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,follow-up,20,2025-09-06T03:31:22
+APT_20250906_033251,Jane Newpatient,P20250906033251,Dr. Robert Johnson,2025-09-07,10:00 AM,confirmed,routine,60,2025-09-06T03:32:51
+APT_20250906_044224,Appointment Booked,P20250906044224,Dr. Robert Johnson,2025-09-07,09:00 AM,confirmed,cardiology,80,2025-09-06T04:42:24
